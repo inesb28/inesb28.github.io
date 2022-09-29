@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .izquierda, .derecha{
+        width: 20%;
+        float: left;}
+
+    .centro{
+        width: 60%;
+        float: left;
+        background-color: rgb(94, 221, 189);}
+
+    .izquierda{background-color: magenta;}
+
+    .derecha{background-color: magenta;}
+
+    @media screen and (max-width: 800px){
+        .izquierda, .derecha, .centro{
+            width: 100%;
+            }}
+
+    </style>
+</head>
+<body>
+
+    <div class="izquierda">soy la capa izquierda</div>
+    <div class="centro">soy la capa del centro</div>
+    <div class="derecha">soy la capa de la derecha</div>
+
+</body>
+</html>
