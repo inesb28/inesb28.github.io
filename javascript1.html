@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function esconder() 
+        {document.getElementById('escondido').style.display='none'}
+        function mostrar()
+        {document.getElementById('escondido').style.display='block'}
+        function cambio(disco)
+        {if (disco === 'debut')
+        {document.getElementById('foto').src='debut.jfif'}
+        if (disco === 'fearless')
+        {document.getElementById('foto').src='fearless.jfif'}
+        if (disco === 'speaknow')
+        {document.getElementById('foto').src='speaknow.jfif'}
+        if (disco === 'red')
+        {document.getElementById('foto').src='red.jfif'}
+        if (disco === 'milnovecientos')
+        {document.getElementById('foto').src='1989.jfif'}
+        if (disco === 'reputation')
+        {document.getElementById('foto').src='reputation.jfif'}
+        if (disco === 'lover')
+        {document.getElementById('foto').src='lover.jfif'}
+        if (disco === 'folklore')
+        {document.getElementById('foto').src='folklore.jfif'}
+        if (disco === 'evermore')
+        {document.getElementById('foto').src='evermore.jfif'}}
+
+    </script>
+
+</head>
+<body>
+    <h2>cambio de texto</h2>
+
+    <p id="demo">haz click aquí debajo y verás que pasa</p>
+
+    <button onclick="document.getElementById('demo').innerHTML = 'gracias por pulsar el boton'">
+        haz click aquí
+    </button>
+<br><br>
+    <img id="foto" src="1989.jfif" alt=""><br>
+    <button onclick="cambio('debut')">Taylor Swift</button>
+    <button onclick="cambio('fearless')">fearless</button>
+    <button onclick="cambio('speaknow')">speak now</button>
+    <button onclick="cambio('red')">red</button>
+    <button onclick="cambio('milnovecientos')">1989</button>
+    <button onclick="cambio('reputation')">reputation</button>
+    <button onclick="cambio('lover')">lover</button>
+    <button onclick="cambio('folklore')">folklore</button>
+    <button onclick="cambio('evermore')">evermore</button>
+
+<br><br>
+    <button onclick="document.getElementById('cambioletra').style.fontSize='35px'">augmentar tamaño</button>
+    <button onclick="document.getElementById('cambioletra').style.fontSize='10px'">disminuir tamaño</button>
+    <button onclick="document.getElementById('cambioletra').style.fontSize='16px'">tamaño original</button>
+
+    <p id="cambioletra">hazme más grande, porfavor</p>
+
+    <h2>esconder y mostrar cosas</h2>
+    <div  id="escondido">
+        <p>yo voy a aparecer y desaparecer</p>
+        <p>y yo</p>
+        <p>yo también</p>
+    </div>
+    <button onclick="esconder()">escóndete</button>
+    <button onclick="mostrar()">muéstrate</button>
+
+</body>
+</html>
