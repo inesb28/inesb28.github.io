@@ -53,6 +53,36 @@ function calcular(){
 }
 
 var clicks = 0
-function onclick()
+function onClick()
     {clicks +=1;
     document.getElementById('clicks').innerHTML = clicks;}
+
+function pruebaArrays(){
+    alumnos = ["Pedro", "Pau", "Toni"];
+    mostrarAlumnos()
+}
+
+function mostrarAlumnos(){
+    let textoAlumnos = "<ul>"
+    for(let i=0; i<alumnos.length;i++){
+        textoAlumnos += "<li>" + alumnos [i] + "</li>";
+    }
+    textoAlumnos += "</ul>";
+    document.getElementById("listaAlumnos").innerHTML = textoAlumnos;
+    }
+
+function primero(){
+        alumnos.shift();
+        mostrarAlumnos();
+    }
+function ultimo(){
+        alumnos.pop();
+        mostrarAlumnos();
+    }
+function final(){
+    if (alumnos.length>0){
+        document.getElementById('noquedan').style.fontSize='0px'}
+    if (alumnos.length===0){
+        document.getElementById('noquedan').style.fontSize='16px'}
+
+}
